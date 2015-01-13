@@ -5,6 +5,7 @@ busybox echo "Downloading and extracting ${stage3}..."
 busybox wget "${dist}/${stage3}" -qO- \
   | busybox tar \
     --exclude="./sys/*" \
+    --exclude="./etc/hosts" \
     -pxjf -
 busybox rm install.sh
 
