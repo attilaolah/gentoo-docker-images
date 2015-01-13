@@ -1,7 +1,7 @@
 #!/bin/bash
 
 prefix="uclibc"
-version="1.21.0"
+version="1.23.0"
 
 echo "Downloading BusyBox ${version}..."
 

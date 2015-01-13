@@ -1,5 +1,6 @@
-FROM gentoo/busybox:1.21.0
+FROM gentoo/busybox:1.23.0
 MAINTAINER Gentoo Container Team <containers@gentoo.org>
 
+# Run the install script with the bootstrapped BusyBox:
 ADD install.sh /
-RUN ["busybox", "sh", "install.sh"]
+RUN ["/bin/busybox", "sh", "install.sh"]
